@@ -33,6 +33,7 @@ body {
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 0;
     }
 
     &__star-2 {
@@ -41,7 +42,7 @@ body {
         height: 57px;
         left: 63px;
         top: 94px;
-
+        z-index: 0;
     }
 
     &__star-3 {
@@ -50,6 +51,7 @@ body {
         height: 35px;
         left: 156px;
         top: 69px;
+        z-index: 0;
     }
 
     &__star-5 {
@@ -58,6 +60,7 @@ body {
         height: 37px;
         margin-left: 94px;
         top: 538px;
+        z-index: 0;
     }
 
     &__star-4 {
@@ -66,9 +69,10 @@ body {
         height: 83px;
         margin-left: 159px;
         top: 568px;
+        z-index: 0;
     }
 
-    &__menu {
+    &__content {
         max-width: 769px;
         padding-top: 196px;
         
@@ -82,7 +86,7 @@ body {
         color: $color-text;
         font-size: 64px;
         line-height: 78px;
-        
+        position: relative;
        
     }
 
@@ -91,7 +95,7 @@ body {
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
-        padding-top: 24px;
+        padding-top: 24px;position: relative;
 
     }
 
@@ -116,6 +120,7 @@ body {
         border-radius: 60px;
         margin-top: 48px;
         transition: all 0.3s;
+        position: relative;
     }
 
     &__button:hover {
@@ -184,8 +189,8 @@ body {
             display: flex;
             flex-wrap: wrap;
             gap: 32px;
-            
-            
+            z-index: 1;
+            position: relative;
         }
 
         &-text {
@@ -199,11 +204,7 @@ body {
             line-height: 110%;
             border-radius: 52.58px;
             background: rgb(247, 247, 247);
-            width: 76px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
+            display: inline-block;
             padding: 8px 16px 10px 16px;
         }
 
@@ -216,9 +217,34 @@ body {
         }
 
     }
+
+    &__stars {
+
+        &-big {
+            top: 945px;
+        right: 0;
+        position: absolute;
+        z-index: 0;
+        }
+
+        &-11 { 
+            top: 1570px;
+            left: 27.97px;
+            position: absolute;
+            z-index: 0;
+        }
+        &-12 { 
+            top: 1622px;
+            left: 45.18px;
+            position: absolute;
+            z-index: 0;
+        }
+    }
     
     
 }
+
+
 
 
 
