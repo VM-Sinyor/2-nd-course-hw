@@ -174,16 +174,18 @@ body {
 
     &__cart {
         width: 378px;
-        height: 473px;
         background: $color-white;
         border-radius: 30px;
+
+        
 
         &-box {
             margin-top: 72px;
             display: flex;
             flex-wrap: wrap;
-            column-gap: 32px;
-            row-gap: 39px;
+            gap: 32px;
+            
+            
         }
 
         &-text {
