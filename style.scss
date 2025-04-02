@@ -1,3 +1,5 @@
+@import 'vars';
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ ul {
     list-style: none;
 }
 
+
 body {
     font-family: "Montserrat", sans-serif;
     list-style-type: none;
@@ -22,7 +25,7 @@ body {
 }
 
 .header {
-    height: 800px;
+    height: 710px;
     background-color: #E1FF8F;
     position: relative;
 
@@ -32,7 +35,7 @@ body {
         top: 0;
     }
 
-    &__star1 {
+    &__star-2 {
         position: absolute;
         width: 57px;
         height: 57px;
@@ -41,7 +44,7 @@ body {
 
     }
 
-    &__star2 {
+    &__star-3 {
         position: absolute;
         width: 35px;
         height: 35px;
@@ -49,7 +52,7 @@ body {
         top: 69px;
     }
 
-    &__star3 {
+    &__star-5 {
         position: absolute;
         width: 37px;
         height: 37px;
@@ -57,7 +60,7 @@ body {
         top: 538px;
     }
 
-    &__star4 {
+    &__star-4 {
         position: absolute;
         width: 83px;
         height: 83px;
@@ -76,7 +79,7 @@ body {
     }
 
     &__title {
-        color: rgb(32, 32, 39);
+        color: $color-text;
         font-size: 64px;
         line-height: 78px;
         
@@ -84,7 +87,7 @@ body {
     }
 
     &__text {
-        color: #202027;
+        color: $color-text;
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
@@ -93,7 +96,7 @@ body {
     }
 
     &__link {
-        color: #202027;
+        color: $color-text;
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
@@ -101,7 +104,7 @@ body {
     }
 
     &__button {
-        background: #202027;
+        background: $color-text;
         color: #FFFFFF;
         font-family: Montserrat;
         font-weight: 600;
@@ -112,6 +115,7 @@ body {
         border-width: 1px;
         border-radius: 60px;
         margin-top: 48px;
+        transition: all 0.3s;
     }
 
     &__button:hover {
@@ -119,5 +123,27 @@ body {
         color: #000000;
     }
 
-
+    
 }
+
+.scroll-bar {
+    display: flex;
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    align-items: center;
+    gap: 51px; 
+    padding: 0 19px; 
+}
+
+.scroll-bar__link {
+    color: rgb(32, 32, 39);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    text-decoration: none;
+    flex-shrink: 0; 
+}
+
