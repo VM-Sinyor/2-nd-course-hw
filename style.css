@@ -35,34 +35,33 @@ body {
   position: absolute;
   width: 57px;
   height: 57px;
-  margin-left: 63px;
+  left: 63px;
   top: 94px;
 }
 .header__star-3 {
   position: absolute;
   width: 35px;
   height: 35px;
-  margin-left: 156px;
+  left: 156px;
   top: 69px;
 }
 .header__star-5 {
   position: absolute;
   width: 37px;
   height: 37px;
-  margin-left: 948px;
+  margin-left: 94px;
   top: 538px;
 }
 .header__star-4 {
   position: absolute;
   width: 83px;
   height: 83px;
-  margin-left: 1013px;
+  margin-left: 159px;
   top: 568px;
 }
 .header__menu {
   max-width: 769px;
   padding-top: 196px;
-  padding-left: 120px;
 }
 .header__menu-text {
   gap: 24px;
@@ -88,7 +87,7 @@ body {
 }
 .header__button {
   background: #202027;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
@@ -117,7 +116,6 @@ body {
   gap: 51px;
   padding: 0 19px;
 }
-
 .scroll-bar__link {
   color: rgb(32, 32, 39);
   font-size: 30px;
@@ -125,4 +123,62 @@ body {
   line-height: 110%;
   text-decoration: none;
   flex-shrink: 0;
+}
+
+.about-games {
+  background: rgb(32, 32, 39);
+}
+.about-games__container {
+  padding-top: 94px;
+}
+.about-games__info-title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+}
+.about-games__info-text {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 24px;
+}
+.about-games__cart {
+  width: 378px;
+  height: 473px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+}
+.about-games__cart-box {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 39px;
+}
+.about-games__cart-text {
+  padding: 32px 32px 36px 32px;
+}
+.about-games__cart-number {
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  width: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 16px 10px 16px;
+}
+.about-games__cart-name {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  padding-top: 16px;
 }/*# sourceMappingURL=style.css.map */
