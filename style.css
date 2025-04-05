@@ -211,6 +211,7 @@ body {
 
 .games {
   background: rgb(32, 32, 39);
+  position: relative;
 }
 .games__title {
   color: rgb(255, 255, 255);
@@ -262,6 +263,30 @@ body {
   background-color: #202027;
   width: 247px;
   height: 66px;
+}
+
+.stars {
+  position: absolute;
+}
+
+#star-7 {
+  right: 123px;
+  top: 93px;
+}
+
+#star-6 {
+  right: 44px;
+  top: 126px;
+}
+
+#star-8 {
+  right: 52px;
+  bottom: 65px;
+}
+
+#star-10 {
+  right: 150px;
+  bottom: 45px;
 }
 
 .game-card:nth-child(2n) {
