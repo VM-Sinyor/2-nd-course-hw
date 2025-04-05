@@ -227,7 +227,10 @@ body {
   }
   .header__content {
     max-width: 296px;
+    margin: 0 auto;
     padding-top: 147px;
+    position: relative;
+    z-index: 1;
   }
   .header__title {
     font-size: 40px;
