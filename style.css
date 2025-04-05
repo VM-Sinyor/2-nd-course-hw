@@ -162,6 +162,7 @@ body {
   gap: 32px;
   z-index: 1;
   position: relative;
+  padding-bottom: 50px;
 }
 .about-games__stars-big {
   top: 945px;
@@ -206,6 +207,79 @@ body {
   font-weight: 700;
   line-height: 39px;
   padding-top: 16px;
+}
+
+.games {
+  background: rgb(32, 32, 39);
+}
+.games__title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  padding-top: 46px;
+}
+.games__list {
+  display: flex;
+  margin-top: 72px;
+  gap: 32px;
+  flex-direction: column;
+  padding-bottom: 144px;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+}
+.game-card__box {
+  padding: 48px;
+  width: 600px;
+}
+.game-card__name {
+  color: #202027;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.game-card__desc {
+  color: #202027;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+.game-card__button {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  color: rgb(255, 255, 255);
+  border-radius: 60px;
+  background-color: #202027;
+  width: 247px;
+  height: 66px;
+}
+
+.game-card:nth-child(2n) {
+  flex-direction: row;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(189, 237, 53);
+  height: 150px;
+}
+.footer__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #000000;
 }
 
 @media (max-width: 767px) {
