@@ -139,6 +139,11 @@ body {
 .about-games {
   background: rgb(32, 32, 39);
 }
+.about-games__box {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .about-games__container {
   padding-top: 94px;
 }
@@ -181,6 +186,13 @@ body {
   left: 45.18px;
   position: absolute;
   z-index: 0;
+}
+.about-games__card {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.about-games__card:hover {
+  transform: scale(1.05);
 }
 
 .card {

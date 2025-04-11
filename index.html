@@ -174,29 +174,57 @@
                 </p>
             </div>
             <div class="about-games__cards">
-                <div class="about-games__card card">
-                    <div class="card__cover">
-                        <img src="./img/cover-1.svg" alt="games-1">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__number">
-                            <p>Игра № 1</p>
+
+                <div class="about-games__box">
+                    <a href="#guesNumber"><div class="about-games__card card">
+                        <div class="card__cover">
+                            <img src="./img/cover-1.svg" alt="games-1">
                         </div>
-                        <p class="card__name">Угадай число</p>
-                    </div>
-                </div>
-                <div class="about-games__card card">
-                    <div class="card__cover">
-                        <img src="./img/cover-2.svg" alt="game-2">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__number">
-                            <p>Игра № 2</p>
+                        <div class="card__content">
+                            <div class="card__number">
+                                <p>Игра № 1</p>
+                            </div>
+                            <p class="card__name">Угадай число</p>
                         </div>
-                        <p class="card__name">Простая арифметика</p>
-                    </div>
+                    </div></a>   
+                    <a href="#rockScissorsPaper"><div class="about-games__card card">
+                        <div class="card__cover">
+                            <img src="./img/cover-4.svg" alt="game-4">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__number">
+                                <p>Игра № 4</p>
+                            </div>
+                            <p class="card__name">Камень, ножницы,<br> бумага</p>
+                        </div>
+                    </div></a>
                 </div>
-                <div class="about-games__card card">
+                <div class="about-games__box">
+                    <a href="#justSum"><div class="about-games__card card">
+                        <div class="card__cover">
+                            <img src="./img/cover-2.svg" alt="game-2">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__number">
+                                <p>Игра № 2</p>
+                            </div>
+                            <p class="card__name">Простая арифметика</p>
+                        </div>
+                    </div></a>
+                    <a href="#victorina"><div class="about-games__card card">
+                        <div class="card__cover">
+                            <img src="./img/cover-5.svg" alt="game-5">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__number">
+                                <p>Игра № 5</p>
+                            </div>
+                            <p class="card__name">Простая викторина</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="about-games__box">
+                    <a href="#upendText"><div class="about-games__card card">
                     <div class="card__cover">
                         <img src="./img/cover-3.svg" alt="game-3">
                     </div>
@@ -206,30 +234,8 @@
                         </div>
                         <p class="card__name">Переверни текст</p>
                     </div>
-                </div>
-                <div class="about-games__card card">
-                    <div class="card__cover">
-                        <img src="./img/cover-4.svg" alt="game-4">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__number">
-                            <p>Игра № 4</p>
-                        </div>
-                        <p class="card__name">Камень, ножницы,<br> бумага</p>
-                    </div>
-                </div>
-                <div class="about-games__card card">
-                    <div class="card__cover">
-                        <img src="./img/cover-5.svg" alt="game-5">
-                    </div>
-                    <div class="card__content">
-                        <div class="card__number">
-                            <p>Игра № 5</p>
-                        </div>
-                        <p class="card__name">Простая викторина</p>
-                    </div>
-                </div>
-                <div class="about-games__card card">
+                </div></a>
+                <a href="#randomColorGenerator"><div class="about-games__card card">
                     <div class="card__cover">
                         <img src="./img/cover-6.svg" alt="game-6">
                     </div>
@@ -239,6 +245,7 @@
                         </div>
                         <p class="card__name">Генератор случайных цветов</p>
                     </div>
+                </div></a>
                 </div>
             </div>
             <div class="about-games__stars">
@@ -259,7 +266,7 @@
     <section class="games center">
         <h2 class="games__title">Мини-игры</h2>
         <div class="games__list">
-            <div class="game-card">
+            <div id="guesNumber" class="game-card">
                 <img class="game-card__img" src="./img/game-1.svg" alt="Угадай число">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Угадай число</h3>
@@ -267,7 +274,7 @@
                 <button class="game-card__button">Играть!</button>
                 </div>
             </div>
-            <div class="game-card">
+            <div id="justSum" class="game-card">
                 <img class="game-card__img" src="./img/game-2.svg" alt="Простая арифметика">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Простая арифметика</h3>
@@ -275,7 +282,7 @@
                 <button class="game-card__button">Играть!</button>
                 </div>
             </div>
-            <div class="game-card">
+            <div id="upendText" class="game-card">
                 <img class="game-card__img" src="./img/game-3.svg" alt="Переверни текст">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Переверни текст</h3>
@@ -283,7 +290,7 @@
                 <button class="game-card__button">Играть!</button>
                 </div>
             </div>
-            <div class="game-card">
+            <div id="victorina" class="game-card">
                 <img class="game-card__img" src="./img/game-4.svg" alt="Викторина">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Викторина</h3>
@@ -291,7 +298,7 @@
                 <button class="game-card__button">Играть!</button>
                 </div>
             </div>
-            <div class="game-card">
+            <div id="rockScissorsPaper" class="game-card">
                 <img class="game-card__img" src="./img/game-5.svg" alt="Камень, ножницы, бумага">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Камень, <br>ножницы, <br>бумага</h3>
@@ -299,7 +306,7 @@
                 <button class="game-card__button">Играть!</button>
                 </div>
             </div>
-            <div class="game-card">
+            <div id="randomColorGenerator" class="game-card">
                 <img class="game-card__img" src="./img/game-6.svg" alt="Генератор случайных цветов">
                 <div class="game-card__box">
                     <h3 class="game-card__name">Генератор <br>случайных <br>цветов</h3>

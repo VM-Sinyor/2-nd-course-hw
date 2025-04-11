@@ -161,6 +161,12 @@ body {
 .about-games {
     background: $background-color-games;
 
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
     &__container {
         padding-top: 94px;
     }
@@ -214,9 +220,19 @@ body {
         }
     }
 
+    &__card {
+        transition: transform 0.3s ease;
+        transform-origin: center; 
+    }
+
+    &__card:hover {
+        transform: scale(1.05);
+    }
+
 }
 
 .card {
+    
     width: 378px;
     background: $color-white;
     border-radius: 30px;
