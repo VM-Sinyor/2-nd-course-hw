@@ -2,7 +2,7 @@
 
 // const lessNumber = (min, max) => alert(min <= max ? min : max);
 
-// Task 2
+//Task 2
 
 // const numberCheck = (num) => num % 2 === 0 ? 'Число четное' : 'Число нечетное';
 
