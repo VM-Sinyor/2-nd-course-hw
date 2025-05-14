@@ -72,4 +72,28 @@
 // alert(numberEnd);
 
 
+// В объекте объекты с масивами
+//    const newspaper = {
+//    sports: {
+//     title: 'ARod Hits Home Run',
+//     writers: ['Miramon Nuevo', 'Rick Reilly', 'Woddy Paige'],
+//    },
+
+//    business: {
+//     title: 'GE Stock Dips Again',
+//     writers: ['Adam Smith', 'Albert Humphrey', 'Charles Handy'],
+//    },
+
+//    movies: {
+//     title: 'Superman Is A Flop',
+//     writers: ['Rogert Ebert', 'Andrew Sarris', 'Wesley Morris'],
+//    }
+// }
+
+//     newspaper.sports.title;
+//     newspaper.business.writers[0];
+//     newspaper['movies']['title'];
+
+
+
 
