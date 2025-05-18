@@ -86,4 +86,18 @@ document.getElementById('startJustSum').addEventListener('click', () => {
     startGames();
 });
 
+document.getElementById('startUpendText').addEventListener('click', () => {
+    const text = prompt("Введите ваш текст");
+    if (text === null || text.trim() === '') {
+        alert('Вы ничего не ввели!')
+    } else {
+        const reversed = text.split('').reverse().join('');
+    
+        alert(`Ваш текст наоборот: ${reversed}`);
+    }
 
+});
+
+document.getElementById('startVictorina').addEventListener('click', () => {
+
+});
