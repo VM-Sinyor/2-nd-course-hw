@@ -99,5 +99,45 @@ document.getElementById('startUpendText').addEventListener('click', () => {
 });
 
 document.getElementById('startVictorina').addEventListener('click', () => {
+    const quiz = [
+    {
+        question: "Сколько пар обуви понадобится сороконожке?",
+        options: ["1. 40", "2. 20", "3. 1"],
+        correctAnswer: 2
+    },
+    {
+        question: "Кто проживает на дне океана?",
+        options: ["1. Окунь", "2. Спанч Боб", "3. Морской котик"],
+        correctAnswer: 2
+    },
+    {
+        question: "В каком году научились превращать свинец в золото?",
+        options: ["1. 1987", "2. 2025", "3. 2012"],
+        correctAnswer: 2
+    }
+];
+
+let score = 0;
+
+for (let i = 0; i < quiz.length; i++) {
+    const currentQuestion = quiz[i];
+    
+    const optionsText = currentQuestion.options.join('\n'); 
+    const userAnswer = prompt(`${currentQuestion.question}\n\n${optionsText}\n\nВведите номер ответа:`);
+
+    if (userAnswer === null) {
+        alert("Игра прервана.");
+        break;
+    }
+
+    const userAnswerNumber = Number(userAnswer);
+
+    if (userAnswerNumber === currentQuestion.correctAnswer) {
+        score++;
+    }
+}
+
+
+alert(`Правильных ответов: ${score} из ${quiz.length}`);
 
 });
