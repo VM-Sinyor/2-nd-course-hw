@@ -141,3 +141,36 @@ for (let i = 0; i < quiz.length; i++) {
 alert(`Правильных ответов: ${score} из ${quiz.length}`);
 
 });
+
+document.getElementById('startRsp').addEventListener('click', () => {
+    
+    const userChoice = prompt("Выбери: камень, ножницы или бумага").toLowerCase();
+
+    const choices = ["камень", "ножницы", "бумага"];
+
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    const computerChoice = choices[randomIndex];
+
+   
+    alert(`Ты выбрал: ${userChoice}\nКомпьютер выбрал: ${computerChoice}`);
+
+    
+    let result = "";
+
+    if (userChoice === computerChoice) {
+      result = "Ничья!";
+    } else if (
+      (userChoice === "камень" && computerChoice === "ножницы") ||
+      (userChoice === "ножницы" && computerChoice === "бумага") ||
+      (userChoice === "бумага" && computerChoice === "камень")
+    ) {
+      result = "Ты победил!";
+    } else if (choices.includes(userChoice)) {
+      result = "Компьютер победил!";
+    } else {
+      result = "Ты ввёл что-то непонятное...";
+    }
+
+    alert(result);
+
+});
