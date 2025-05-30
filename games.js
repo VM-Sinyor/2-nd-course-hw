@@ -193,3 +193,13 @@ document.getElementById('startRandomColor').addEventListener('click', () => {
     })
     
 });
+
+
+document.querySelector('.desktop-only').addEventListener('click', () => {
+    document.getElementById('about-games').scrollIntoView({ behavior: 'smooth' })
+});
+
+document.querySelector('.mobile-only').addEventListener('click', () => {
+    document.getElementById('games').scrollIntoView({ behavior: 'smooth' })
+});
+

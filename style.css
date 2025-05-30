@@ -1,3 +1,21 @@
+@media (hover: hover) and (pointer: fine) {
+  .game-card__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #202027;
+  }
+  .header__button:hover {
+    background: rgb(255, 255, 255);
+    color: #000000;
+  }
+}
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -113,10 +131,6 @@ body {
   margin-top: 48px;
   transition: all 0.3s;
   position: relative;
-}
-.header__button:hover {
-  background: rgb(255, 255, 255);
-  color: #000000;
 }
 
 .scroll-bar {
@@ -301,10 +315,6 @@ body {
   height: 66px;
   transition: all 0.3s;
 }
-.game-card__button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #202027;
-}
 
 .stars {
   position: absolute;
@@ -349,9 +359,18 @@ body {
 }
 
 @media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    height: 649px;
   }
   .header__mobile {
     display: block;
@@ -396,7 +415,7 @@ body {
     height: 55px;
     border-width: 1px;
     border-radius: 60px;
-    margin-top: 48px;
+    margin-top: 36px;
   }
   .mobile__big-star {
     position: absolute;
@@ -417,6 +436,20 @@ body {
     height: 21px;
     left: 75px;
     top: 64px;
+  }
+  .mobile__star-4 {
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    bottom: 28px;
+  }
+  .mobile__star-5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 86px;
+    bottom: 74px;
   }
   #cop {
     display: none;

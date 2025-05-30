@@ -65,6 +65,8 @@
                 <img class="mobile__big-star" src="./img/mobile-bigStar.svg" alt="big-star">
                 <img class="mobile__star-2" src="./img/mobile-star-2.svg" alt="star-small">
                 <img class="mobile__star-3" src="./img/mobile-star-3.svg" alt="star-small">
+                <img class="mobile__star-4" src="./img/mobile-star-4.svg" alt="star-small">
+                <img class="mobile__star-5" src="./img/mobile-star-5.svg" alt="star-small">
 
         </div>
 
@@ -77,8 +79,9 @@
                         class="header__link" href="#">«Поехали!»</a> и <a class="header__link" href="#">приступай.</a>
                 </p>
             </div>
-            <button class="header__button"
-                onclick="document.getElementById('about-games').scrollIntoView({ behavior: 'smooth' })">Поехали!</button>
+                <button class="header__button desktop-only">Поехали!</button>
+                <button class="header__button mobile-only" >Поехали!</button>
+
         </div>
     </header>
 
@@ -345,7 +348,7 @@
     </section>
 
     <section class="games center">
-        <h2 class="games__title">Мини-игры</h2>
+        <h2 id="games" class="games__title">Мини-игры</h2>
         <div class="games__list">
             <div id="guesNumber" class="game-card">
                 <img class="game-card__img" src="./img/game-1.svg" alt="Угадай число">
