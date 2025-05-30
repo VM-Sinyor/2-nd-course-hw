@@ -6,6 +6,11 @@ document.getElementById('startGuesNumber').addEventListener('click', () => {
     const makeGuess = () => {
         let guess = prompt("Введите число от 1 до 100:");
 
+        if (guess === null) {
+            alert("Игра прервана");
+            return; 
+        }
+
         guess = parseInt(guess);
         attempts++;
 
@@ -173,4 +178,18 @@ document.getElementById('startRsp').addEventListener('click', () => {
 
     alert(result);
 
+});
+
+document.getElementById('startRandomColor').addEventListener('click', () => {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    const randomColor = `rgb(${r}, ${g}, ${b})`
+
+    const select = document.querySelectorAll('.header, .about-games, .games');
+    select.forEach(sel => {
+        sel.style.backgroundColor = randomColor;
+    })
+    
 });

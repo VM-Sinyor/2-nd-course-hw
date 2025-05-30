@@ -130,6 +130,7 @@ body {
   align-items: center;
   gap: 51px;
   padding: 0 19px;
+  overflow: hidden;
 }
 .scroll-bar__link {
   color: rgb(32, 32, 39);
@@ -140,6 +141,21 @@ body {
   flex-shrink: 0;
 }
 
+.scroll-bar__inner {
+  display: flex;
+  gap: 51px;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .about-games {
   background: rgb(32, 32, 39);
 }
