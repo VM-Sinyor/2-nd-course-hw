@@ -1,4 +1,16 @@
 @import 'vars';
+@media (hover: hover) and (pointer: fine) {
+    .game-card__button:hover {
+        background-color: rgb(255, 255, 255);
+        color: #202027;
+    }
+    .header__button:hover {
+        background: $color-white;
+        color: #000000;
+    }
+}
+ .desktop-only { display: block; }
+  .mobile-only { display: none; }
 
 * {
     margin: 0;
@@ -131,10 +143,7 @@ body {
         position: relative;
     }
 
-    &__button:hover {
-        background: $color-white;
-        color: #000000;
-    }
+
     
 }
 
@@ -148,6 +157,8 @@ body {
     align-items: center;
     gap: 51px;
     padding: 0 19px;
+    overflow: hidden;
+
 
     &__link {
         color: rgb(32, 32, 39);
@@ -157,6 +168,23 @@ body {
         text-decoration: none;
         flex-shrink: 0;
     }
+}
+
+.scroll-bar__inner {
+  display: flex;
+  gap: 51px;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+
+    transform: translateX(-50%);
+  }
 }
 
 .about-games {
@@ -329,10 +357,6 @@ body {
         transition: all 0.3s;
     }
 
-    &__button:hover {
-        background-color: $color-white;
-        color: $color-text;
-    }
 }
 
 .stars {
@@ -379,3 +403,4 @@ body {
 }
 
 @import 'mobile';
+@import 'tablet';

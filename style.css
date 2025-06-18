@@ -1,3 +1,21 @@
+@media (hover: hover) and (pointer: fine) {
+  .game-card__button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #202027;
+  }
+  .header__button:hover {
+    background: rgb(255, 255, 255);
+    color: #000000;
+  }
+}
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,10 +132,6 @@ body {
   transition: all 0.3s;
   position: relative;
 }
-.header__button:hover {
-  background: rgb(255, 255, 255);
-  color: #000000;
-}
 
 .scroll-bar {
   display: flex;
@@ -130,6 +144,7 @@ body {
   align-items: center;
   gap: 51px;
   padding: 0 19px;
+  overflow: hidden;
 }
 .scroll-bar__link {
   color: rgb(32, 32, 39);
@@ -140,6 +155,21 @@ body {
   flex-shrink: 0;
 }
 
+.scroll-bar__inner {
+  display: flex;
+  gap: 51px;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .about-games {
   background: rgb(32, 32, 39);
 }
@@ -285,10 +315,6 @@ body {
   height: 66px;
   transition: all 0.3s;
 }
-.game-card__button:hover {
-  background-color: rgb(255, 255, 255);
-  color: #202027;
-}
 
 .stars {
   position: absolute;
@@ -333,9 +359,18 @@ body {
 }
 
 @media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header {
+    height: 649px;
   }
   .header__mobile {
     display: block;
@@ -380,7 +415,7 @@ body {
     height: 55px;
     border-width: 1px;
     border-radius: 60px;
-    margin-top: 48px;
+    margin-top: 36px;
   }
   .mobile__big-star {
     position: absolute;
@@ -401,6 +436,181 @@ body {
     height: 21px;
     left: 75px;
     top: 64px;
+  }
+  .mobile__star-4 {
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    bottom: 28px;
+  }
+  .mobile__star-5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 86px;
+    bottom: 74px;
+  }
+  #cop {
+    display: none;
+  }
+  .scroll-bar {
+    height: 51px;
+    gap: 27px;
+    padding: 0 17px;
+  }
+  .scroll-bar__link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+  }
+  .scroll-bar__stars {
+    width: 19.34px;
+    height: 19.34px;
+  }
+  .about-games {
+    display: none;
+  }
+  .games__title {
+    font-size: 40px;
+    padding-top: 48px;
+  }
+  .games__list {
+    margin-top: 48px;
+    padding-bottom: 48px;
+    gap: 24px;
+  }
+  .game-card {
+    flex-direction: column;
+  }
+  .game-card__img {
+    width: 343px;
+    height: 285px;
+  }
+  .game-card__name {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  .game-card__desc {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    line-height: 20px;
+  }
+  .game-card__box {
+    padding: 29px;
+    width: auto;
+  }
+  .game-card__transfer {
+    display: none;
+  }
+  .game-card__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .game-card:nth-child(2n) {
+    flex-direction: column;
+  }
+  .backgraund-stars-game {
+    display: none;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__title {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .center {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header {
+    height: 649px;
+  }
+  .header__mobile {
+    display: block;
+  }
+  .header__big-star {
+    display: none;
+  }
+  .header__star-2 {
+    display: none;
+  }
+  .header__star-3 {
+    display: none;
+  }
+  .header__content {
+    max-width: 296px;
+    margin: 0 auto;
+    padding-top: 147px;
+    position: relative;
+    z-index: 1;
+  }
+  .header__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header__link {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .header__button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    width: 285px;
+    height: 55px;
+    border-width: 1px;
+    border-radius: 60px;
+    margin-top: 36px;
+  }
+  .mobile__big-star {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+  .mobile__star-2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 21px;
+    top: 97px;
+  }
+  .mobile__star-3 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 75px;
+    top: 64px;
+  }
+  .mobile__star-4 {
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    right: 34px;
+    bottom: 28px;
+  }
+  .mobile__star-5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 86px;
+    bottom: 74px;
   }
   #cop {
     display: none;
